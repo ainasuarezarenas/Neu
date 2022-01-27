@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+      .floc {
+        position: fixed;
+        color: whitesmoke;
+        top: 0%;
+        size: 50px;
+        height: 1000px;
+      }
+      body {
+          background-image: url(https://www.etapainfantil.com/wp-content/uploads/2017/11/D%C3%B3nde-est%C3%A1-la-casa-de-Pap%C3%A1-Noel.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+    <span class="floc"> ❄ </span>
+
+    <script>
+
+      document
+      .querySelectorAll('.floc')
+      .forEach((floc) => {
+          floc.style.top = '-10%';
+          floc.style.left = 100 * Math.random() + '%';
+
+      setInterval(() => {
+          incrementa(3 * Math.random());
+      }, 40);
+
+      function incrementa (quantitat) {
+      let top = parseInt(floc.style.top);
+      floc.style.top = top + quantitat + '%';
+      if (top + quantitat >= 100)
+      floc.style.top = '-10%';
+      }
+    });
+
+    </script>
+
+  </body>
+</html>
